@@ -63,7 +63,7 @@ $(document).ready(function() {
   },
   {
     name: 'items',
-    source: algolia.initIndex('items').ttAdapter({ hitsPerPage: 3 }),
+    source: algolia.initIndex('newitems').ttAdapter({ hitsPerPage: 3 }),
     templates: {
       header: '<h3 class="tt-header">Items</h3>',
       suggestion: itemSuggestionTemplate.render.bind(itemSuggestionTemplate)
