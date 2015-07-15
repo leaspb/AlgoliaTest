@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://demos.algolia.com/mysale/dist/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Instant Search Boilerplate</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./files/ion.rangeSlider.css">
+  <link rel="stylesheet" type="text/css" href="./files/ion.rangeSlider.skinFlat.css">
+  <link rel="stylesheet" type="text/css" href="./files/main.css">
+  <!-- /CSS -->
+<meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;jQuery&quot;:&quot;2.1.4&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script></head>
+<body>
+
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <!-- Logo -->
+      <a href=""><img id="logo" src="./files/logo.png"></a>
+
+      <!-- Autocompletion bar -->
+      <div id="autocomplete-input">
+        <span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input type="text" name="aq" id="aq" autocomplete="off" spellcheck="false" autocorrect="false" class="form-control string tt-input" placeholder="Search by name, brand, description..." dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &#39;Helvetica Neue&#39;, Helvetica, sans-serif; font-size: 13.3333330154419px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-sales"></div><div class="tt-dataset-items"></div></span></span>
+        <div id="autocomplete-icon"></div>
+      </div>
+    </div>
+  </header>
+  <!-- /Header -->
+
+
+  <!-- Search input -->
+  <section id="section-input">
+    <input id="search-input" type="text" autocomplete="off" spellcheck="false" autocorrect="false" placeholder="Search by name, brand, description...">
+    <div id="search-input-icon"></div>
+  </section>
+  <!-- /Search input -->
+
+
+  <!-- Main -->
+  <main>
+    <!-- Left Column -->
+    <div id="left-column">
+      <div id="facets">
+    <div class="facet">
+      <h5>Country</h5>
+      <ul>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="countryid" data-value="BA">
+            BA<small class="facet-count">30762</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="countryid" data-value="AS">
+            AS<small class="facet-count">30653</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="countryid" data-value="NZ">
+            NZ<small class="facet-count">30104</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="countryid" data-value="BN">
+            BN<small class="facet-count">29816</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="countryid" data-value="SI">
+            SI<small class="facet-count">27728</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="countryid" data-value="MY">
+            MY<small class="facet-count">27696</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="countryid" data-value="HK">
+            HK<small class="facet-count">25147</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="countryid" data-value="UK">
+            UK<small class="facet-count">18740</small>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="facet">
+      <h5>Sale Priority End</h5>
+      <span class="irs js-irs-4 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="-1"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="visibility: hidden;">#1429720000</span><span class="irs-max" style="visibility: hidden;">#1429720001</span><span class="irs-from" style="visibility: visible; left: -13.043478261%;">#1429720000</span><span class="irs-to" style="visibility: visible; left: 80%;">#1429720001</span><span class="irs-single" style="visibility: hidden; left: 15.652173913%;">#1429720000 — #1429720001</span></span><span class="irs-grid" style="width: 93.043478261%; left: 3.37826087%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -13.260869565%;">#1429720000</span><span class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small" style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol" style="left: 25%"></span><span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: hidden; margin-left: -13.260869565%;">#1429720000</span><span class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small" style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol" style="left: 50%"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: visible; margin-left: -13.260869565%;">#1429720001</span><span class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small" style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol" style="left: 75%"></span><span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: hidden; margin-left: -13.260869565%;">#1429720001</span><span class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small" style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%; margin-left: -13.260869565%;">#1429720001</span></span><span class="irs-bar" style="left: 3.47826087%; width: 93.043478261%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 0%;"></span><span class="irs-slider to" style="left: 93.043478261%;"></span></span><input type="text" id="salepriorityendd_timestamp-slider" data-min="1429720000" data-max="1429720001" data-from="1429720000" data-to="1429720001" class="irs-hidden-input" readonly="">
+    </div>
+  
+    <div class="facet">
+      <h5>Sale Priority Start</h5>
+      <span class="irs js-irs-5 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="-1"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="visibility: hidden;">#1429720000</span><span class="irs-max" style="visibility: hidden;">#1429720001</span><span class="irs-from" style="visibility: visible; left: -13.043478261%;">#1429720000</span><span class="irs-to" style="visibility: visible; left: 80%;">#1429720001</span><span class="irs-single" style="visibility: hidden; left: 15.652173913%;">#1429720000 — #1429720001</span></span><span class="irs-grid" style="width: 93.043478261%; left: 3.37826087%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -13.260869565%;">#1429720000</span><span class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small" style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol" style="left: 25%"></span><span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: hidden; margin-left: -13.260869565%;">#1429720000</span><span class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small" style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol" style="left: 50%"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: visible; margin-left: -13.260869565%;">#1429720001</span><span class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small" style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol" style="left: 75%"></span><span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: hidden; margin-left: -13.260869565%;">#1429720001</span><span class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small" style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%; margin-left: -13.260869565%;">#1429720001</span></span><span class="irs-bar" style="left: 3.47826087%; width: 93.043478261%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 0%;"></span><span class="irs-slider to" style="left: 93.043478261%;"></span></span><input type="text" id="saleprioritystartdate_timestamp-slider" data-min="1429720000" data-max="1429720001" data-from="1429720000" data-to="1429720001" class="irs-hidden-input" readonly="">
+    </div>
+  
+    <div class="facet">
+      <h5>Sale Regular End</h5>
+      <span class="irs js-irs-6 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="-1"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="visibility: hidden;">#1427040000</span><span class="irs-max" style="visibility: hidden;">#1430430001</span><span class="irs-from" style="visibility: visible; left: -13.043478261%;">#1427040000</span><span class="irs-to" style="visibility: visible; left: 80%;">#1430430001</span><span class="irs-single" style="visibility: hidden; left: 15.652173913%;">#1427040000 — #1430430001</span></span><span class="irs-grid" style="width: 93.043478261%; left: 3.37826087%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -13.260869565%;">#1427040000</span><span class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small" style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol" style="left: 25%"></span><span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: hidden; margin-left: -13.260869565%;">#1427887500</span><span class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small" style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol" style="left: 50%"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: visible; margin-left: -13.260869565%;">#1428735001</span><span class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small" style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol" style="left: 75%"></span><span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: hidden; margin-left: -13.260869565%;">#1429582501</span><span class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small" style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%; margin-left: -13.260869565%;">#1430430001</span></span><span class="irs-bar" style="left: 3.47826087%; width: 93.043478261%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 0%;"></span><span class="irs-slider to" style="left: 93.043478261%;"></span></span><input type="text" id="saleregularenddate_timestamp-slider" data-min="1427040000" data-max="1430430001" data-from="1427040000" data-to="1430430001" class="irs-hidden-input" readonly="">
+    </div>
+  
+    <div class="facet">
+      <h5>Sale Reguler Start</h5>
+      <span class="irs js-irs-7 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="-1"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="visibility: hidden;">#1427860000</span><span class="irs-max" style="visibility: hidden;">#1432370001</span><span class="irs-from" style="visibility: visible; left: -13.043478261%;">#1427860000</span><span class="irs-to" style="visibility: visible; left: 80%;">#1432370001</span><span class="irs-single" style="visibility: hidden; left: 15.652173913%;">#1427860000 — #1432370001</span></span><span class="irs-grid" style="width: 93.043478261%; left: 3.37826087%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -13.260869565%;">#1427860000</span><span class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small" style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol" style="left: 25%"></span><span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: hidden; margin-left: -13.260869565%;">#1428987500</span><span class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small" style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol" style="left: 50%"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: visible; margin-left: -13.260869565%;">#1430115001</span><span class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small" style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol" style="left: 75%"></span><span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: hidden; margin-left: -13.260869565%;">#1431242501</span><span class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small" style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%; margin-left: -13.260869565%;">#1432370001</span></span><span class="irs-bar" style="left: 3.47826087%; width: 93.043478261%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 0%;"></span><span class="irs-slider to" style="left: 93.043478261%;"></span></span><input type="text" id="saleregularstartdate_timestamp-slider" data-min="1427860000" data-max="1432370001" data-from="1427860000" data-to="1432370001" class="irs-hidden-input" readonly="">
+    </div>
+  
+    <div class="facet">
+      <h5>Taxonomy</h5>
+      <ul>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="taxonomypath" data-value="Items Taxonomy/Clothing/Womens">
+            Items Taxonomy/Clothing/Womens<small class="facet-count">43865</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="taxonomypath" data-value="Items Taxonomy/Kids &amp; Maternity/Clothing">
+            Items Taxonomy/Kids &amp; Maternity/Clothing<small class="facet-count">15399</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="taxonomypath" data-value="Items Taxonomy/Home &amp; Living">
+            Items Taxonomy/Home &amp; Living<small class="facet-count">14431</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="taxonomypath" data-value="Items Taxonomy/Footwear &amp; Accessories/Womens/Shoes">
+            Items Taxonomy/Footwear &amp; Accessories/Womens/Shoes<small class="facet-count">14230</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="taxonomypath" data-value="Items Taxonomy/Footwear &amp; Accessories/Womens/Jewelry">
+            Items Taxonomy/Footwear &amp; Accessories/Womens/Jewelry<small class="facet-count">11864</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="taxonomypath" data-value="Items Taxonomy/Footwear &amp; Accessories/Unisex/Watches">
+            Items Taxonomy/Footwear &amp; Accessories/Unisex/Watches<small class="facet-count">11128</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="taxonomypath" data-value="Items Taxonomy/Health &amp; Beauty">
+            Items Taxonomy/Health &amp; Beauty<small class="facet-count">10899</small>
+          </a>
+        </li>
+        <li>
+          <a href="" class="facet-link toggle-refine " data-facet="taxonomypath" data-value="Items Taxonomy/Clothing/Womens/Dresses">
+            Items Taxonomy/Clothing/Womens/Dresses<small class="facet-count">10863</small>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    </div>
+
+    <!-- Right Column -->
+    <div id="right-column">
+      <div id="stats">
+    270,000 Results <span class="found-in">Found in 24ms</span>
+  </div>
+      <div id="hits">
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PT-103H-Red-a_406x650.JPG" alt="Tops-PT-103H-Red">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$75.00 / $75.00</h3>
+        <h2 class="hit-name">Tops-PT-103H-Red</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester, 5% Spandex</li><li>Printed Top</li><li>Short Sleeve</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: X-Large<br>Model's height: 178 cm<br><p></p>
+      </div>
+    </div>
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PS111-02-BlueFlower-a_406x650.JPG" alt="Tank Top-PS111-02-BlueFlower">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$1090.00 / $1090.00</h3>
+        <h2 class="hit-name">Tank Top-PS111-02-BlueFlower</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester 5% Spandex</li><li>Printed</li><li>Round Neckline</li><li>Sleeveless Tank</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: 1X-Large<br>Model's height: 178 cm<br><hr><i>About Prints That Pop: With over 30 years of experience in designing, Prints That Pop strives to produce the ultimate fit for you. Using only the best fabrics from Japan, our secret silicon ingredient gives it a soft feel for those who wear and those who feel this unique masterpiece.<i></i><p></p>
+      </i></div><i>
+    </i></div><i>
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PS111-02-BlueFlower-a_406x650.JPG" alt="Tank Top-PS111-02-BlueFlower">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$1190.00 / $1190.00</h3>
+        <h2 class="hit-name">Tank Top-PS111-02-BlueFlower</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester 5% Spandex</li><li>Printed</li><li>Round Neckline</li><li>Sleeveless Tank</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: 1X-Large<br>Model's height: 178 cm<br><hr><i>About Prints That Pop: With over 30 years of experience in designing, Prints That Pop strives to produce the ultimate fit for you. Using only the best fabrics from Japan, our secret silicon ingredient gives it a soft feel for those who wear and those who feel this unique masterpiece.<i></i><p></p>
+      </i></div><i>
+    </i></div><i>
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PS111-02-BlueFlower-a_406x650.JPG" alt="Tank Top-PS111-02-BlueFlower">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$31.00 / $31.00</h3>
+        <h2 class="hit-name">Tank Top-PS111-02-BlueFlower</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester 5% Spandex</li><li>Printed</li><li>Round Neckline</li><li>Sleeveless Tank</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: 1X-Large<br>Model's height: 178 cm<br><hr><i>About Prints That Pop: With over 30 years of experience in designing, Prints That Pop strives to produce the ultimate fit for you. Using only the best fabrics from Japan, our secret silicon ingredient gives it a soft feel for those who wear and those who feel this unique masterpiece.<i></i><p></p>
+      </i></div><i>
+    </i></div><i>
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PS111-02-BlueFlower-a_406x650.JPG" alt="Tank Top-PS111-02-BlueFlower">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$31.00 / $31.00</h3>
+        <h2 class="hit-name">Tank Top-PS111-02-BlueFlower</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester 5% Spandex</li><li>Printed</li><li>Round Neckline</li><li>Sleeveless Tank</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: 1X-Large<br>Model's height: 178 cm<br><hr><i>About Prints That Pop: With over 30 years of experience in designing, Prints That Pop strives to produce the ultimate fit for you. Using only the best fabrics from Japan, our secret silicon ingredient gives it a soft feel for those who wear and those who feel this unique masterpiece.<i></i><p></p>
+      </i></div><i>
+    </i></div><i>
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PS111-02-BlueFlower-a_406x650.JPG" alt="Tank Top-PS111-02-BlueFlower">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$87.00 / $87.00</h3>
+        <h2 class="hit-name">Tank Top-PS111-02-BlueFlower</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester 5% Spandex</li><li>Printed</li><li>Round Neckline</li><li>Sleeveless Tank</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: 1X-Large<br>Model's height: 178 cm<br><hr><i>About Prints That Pop: With over 30 years of experience in designing, Prints That Pop strives to produce the ultimate fit for you. Using only the best fabrics from Japan, our secret silicon ingredient gives it a soft feel for those who wear and those who feel this unique masterpiece.<i></i><p></p>
+      </i></div><i>
+    </i></div><i>
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PS111-02-BlueFlower-a_406x650.JPG" alt="Tank Top-PS111-02-BlueFlower">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$193.00 / $193.00</h3>
+        <h2 class="hit-name">Tank Top-PS111-02-BlueFlower</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester 5% Spandex</li><li>Printed</li><li>Round Neckline</li><li>Sleeveless Tank</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: 1X-Large<br>Model's height: 178 cm<br><hr><i>About Prints That Pop: With over 30 years of experience in designing, Prints That Pop strives to produce the ultimate fit for you. Using only the best fabrics from Japan, our secret silicon ingredient gives it a soft feel for those who wear and those who feel this unique masterpiece.<i></i><p></p>
+      </i></div><i>
+    </i></div><i>
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PS111-02-BlueFlower-a_406x650.JPG" alt="Tank Top-PS111-02-BlueFlower">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$31.00 / $31.00</h3>
+        <h2 class="hit-name">Tank Top-PS111-02-BlueFlower</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester 5% Spandex</li><li>Printed</li><li>Round Neckline</li><li>Sleeveless Tank</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: 1X-Large<br>Model's height: 178 cm<br><hr><i>About Prints That Pop: With over 30 years of experience in designing, Prints That Pop strives to produce the ultimate fit for you. Using only the best fabrics from Japan, our secret silicon ingredient gives it a soft feel for those who wear and those who feel this unique masterpiece.<i></i><p></p>
+      </i></div><i>
+    </i></div><i>
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PS111-02-BlueFlower-a_406x650.JPG" alt="Tank Top-PS111-02-BlueFlower">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$29.00 / $29.00</h3>
+        <h2 class="hit-name">Tank Top-PS111-02-BlueFlower</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester 5% Spandex</li><li>Printed</li><li>Round Neckline</li><li>Sleeveless Tank</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: 1X-Large<br>Model's height: 178 cm<br><hr><i>About Prints That Pop: With over 30 years of experience in designing, Prints That Pop strives to produce the ultimate fit for you. Using only the best fabrics from Japan, our secret silicon ingredient gives it a soft feel for those who wear and those who feel this unique masterpiece.<i></i><p></p>
+      </i></div><i>
+    </i></div><i>
+    <div class="hit">
+      <div class="hit-image">
+        <img src="./files/PS111-02-BlueFlower-a_406x650.JPG" alt="Tank Top-PS111-02-BlueFlower">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">$29.00 / $29.00</h3>
+        <h2 class="hit-name">Tank Top-PS111-02-BlueFlower</h2>
+        <p class="hit-description"><br><b>Features:</b><br></p><ul><li>95% Polyester 5% Spandex</li><li>Printed</li><li>Round Neckline</li><li>Sleeveless Tank</li><li>Orders are dispatched directly to you from the USA</li></ul><b>Measurements:</b><br><br><a href="http://cdn1.apacsale.com/sizechart/Womens_Wear_Size_Chart.pdf" target="_blank" class="textLinkTopBottom">Size Guide</a><br><br>Model wears: 1X-Large<br>Model's height: 178 cm<br><hr><i>About Prints That Pop: With over 30 years of experience in designing, Prints That Pop strives to produce the ultimate fit for you. Using only the best fabrics from Japan, our secret silicon ingredient gives it a soft feel for those who wear and those who feel this unique masterpiece.<i></i><p></p>
+      </i></div><i>
+    </i></div><i>
+  </i></i></i></i></i></i></i></i></i></div>
+      <div id="pagination">
+    <ul>
+      <li class="disabled"><a href="https://demos.algolia.com/mysale/dist/#">&lt;</a></li>
+      <li class="active "><a href="https://demos.algolia.com/mysale/dist/#" class="go-to-page" data-page="1">1</a></li>
+      <li class=" "><a href="https://demos.algolia.com/mysale/dist/#" class="go-to-page" data-page="2">2</a></li>
+      <li class=" "><a href="https://demos.algolia.com/mysale/dist/#" class="go-to-page" data-page="3">3</a></li>
+      <li class=" disabled"><a href="https://demos.algolia.com/mysale/dist/#">...</a></li>
+      <li class=" "><a href="https://demos.algolia.com/mysale/dist/#" class="go-to-page" data-page="100">100</a></li>
+      <li><a href="https://demos.algolia.com/mysale/dist/#" class="go-to-page" data-page="2">&gt;</a></li>
+    </ul>
+  </div>
+    </div>
+  </main>
+  <!-- /Main -->
+
+
+  <!-- Hit template -->
+  <script type="text/template" id="hit-template">
+    {{#hits}}
+    <div class="hit">
+      <div class="hit-image">
+        <img src="{{ itempicurl }}" alt="{{ itemname }}">
+      </div>
+      <div class="hit-content">
+        <h3 class="hit-price">${{ regularmemberprice }} / ${{ prioritymemberprice }}</h3>
+        <h2 class="hit-name">{{{ _highlightResult.itemname.value }}}</h2>
+        <p class="hit-description">{{{ _highlightResult.itemdescription.value }}}</p>
+      </div>
+    </div>
+    {{/hits}}
+  </script>
+
+  <!-- Stats template -->
+  <script type="text/template" id="stats-template">
+    {{ nbHits }} Result{{#nbHits_plural}}s{{/nbHits_plural}} <span class="found-in">Found in {{ processingTimeMS }}ms</span>
+  </script>
+
+  <!-- Facet template -->
+  <script type="text/template" id="facet-template">
+    <div class="facet">
+      <h5>{{ title }}</h5>
+      <ul>
+        {{#values}}
+        <li {{#refined}}class="refined"{{/refined}}>
+          <a href="" class="facet-link toggle-refine {{#disjunctive}}facet-disjunctive{{/disjunctive}}" data-facet="{{ facet }}" data-value="{{ value }}">
+            {{ label }}<small class="facet-count">{{ count }}</small>
+          </a>
+        </li>
+        {{/values}}
+      </ul>
+    </div>
+  </script>
+
+  <!-- Slider template -->
+  <script type="text/template" id="slider-template">
+    <div class="facet">
+      <h5>{{ title }}</h5>
+      <input type="text" id="{{ facet }}-slider" data-min="{{ min }}" data-max="{{ max }}" data-from="{{ from }}" data-to="{{ to }}"/>
+    </div>
+  </script>
+
+  <!-- Pagination template -->
+  <script type="text/template" id="pagination-template">
+    <ul>
+      <li {{^prev_page}}class="disabled"{{/prev_page}}><a href="#" {{#prev_page}}class="go-to-page" data-page="{{ prev_page }}"{{/prev_page}}>&#60;</a></li>
+      {{#pages}}
+      <li class="{{#current}}active{{/current}} {{#disabled}}disabled{{/disabled}}"><a href="#" {{^disabled}} class="go-to-page" data-page="{{ number }}" {{/disabled}}>{{ number }}</a></li>
+      {{/pages}}
+      <li {{^next_page}}class="disabled"{{/next_page}}><a href="#" {{#next_page}}class="go-to-page" data-page="{{ next_page }}"{{/next_page}}>&#62;</a></li>
+    </ul>
+  </script>
+
+  <!-- Product Suggestion template -->
+  <script type="text/template" id="item-suggestion-template">
+    <div class="product-suggestion">
+      <div class="suggestion-image">
+        <img src="{{ itempicurl }}" alt="{{ itemname }}">
+      </div>
+      <div class="suggestion-content">
+        <h4 class="suggestion-price">${{ regularmemberprice }} / {{ prioritymemberprice }}</h4>
+        <h3 class="suggestion-name">{{{ _highlightResult.itemname.value }}}</h3>
+        <p class="suggestion-description">{{{ _highlightResult.itemdescription.value }}}</p>
+      </div>
+    </div>
+  </script>
+
+  <!-- Sale Suggestion template -->
+  <script type="text/template" id="sale-suggestion-template">
+    <div class="product-suggestion">
+      <div class="suggestion-image">
+        <img src="{{ salespicurl }}" alt="{{ salename }}">
+      </div>
+      <div class="suggestion-content">
+        <h3 class="suggestion-name">{{{ _highlightResult.salename.value }}}</h3>
+        <p class="suggestion-description">{{{ _highlightResult.bannertext.value }}}</p>
+      </div>
+    </div>
+  </script>
+
+  <!-- Javascript -->
+  <script src="./files/jquery.min.js"></script>
+  <script src="./files/algoliasearch.min.js"></script>
+  <script src="./files/algoliasearch.helper.min.js"></script>
+  <script src="./files/hogan.min.common.js"></script>
+  <script src="./files/typeahead.jquery.min.js"></script>
+  <script src="./files/ion.rangeSlider.min.js"></script>
+  <script src="./files/main-newitems.js"></script>
+  <!-- /Javascript -->
+
+
+
+</body></html>
